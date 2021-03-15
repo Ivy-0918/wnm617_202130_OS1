@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Remembering Jquery</title>
+
+	<base href="/aau/wnm617/lin.weichen/">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script>
+		$(()=>{
+
+			$(".accordion dt").on("click",function(e){
+				// $(this).next().show()
+				// $(this).next().toggle()
+				// $(this).next().slideToggle()
+				$(this).next().slideDown()
+					.siblings("dd").slideUp()
+			});
+		})
+	</script>
+</head>
+<body>
+	<header class="container">
+		<h1>Remembering Jquery</h1>
+	</header>
+
+	<div class="container">
+		<h2>Accordion</h2>
+
+		<div class="accordion">
+			<dt>Bear</dt>
+			<dd>Lives in the woods</dd>
+			<dt>Bear</dt>
+			<dd>Lives in the woods</dd>
+			<dt>Bear</dt>
+			<dd>Lives in the woods</dd>
+			<dt>Bear</dt>
+			<dd>Lives in the woods</dd>
+		</div>
+
+		<div class="container">
+			<h2>Tab Group</h2>
+			
+			<div class="tabgroup">
+				<!-- .tabs>.tab*4{Tab $} -->
+				<div class="tabs">
+					<div class="tab">Tab 1</div>
+					<div class="tab">Tab 2</div>
+					<div class="tab">Tab 3</div>
+					<div class="tab">Tab 4</div>
+				</div>
+
+			<!-- .contents>.content*4>h3{content $}+div>p*4>lorem20 -->
+			<div class="contents">
+				<div class="content">
+					<h3>content 1</h3>
+					<div>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos hic dolorum ab dolorem libero, cum voluptatum vero maiores dolores inventore!</p>
+						<p>Eveniet ipsam repellendus corrupti, amet! Quidem odio corrupti natus iusto ut recusandae illo error voluptates officia, nobis earum est facilis!</p>
+						<p>Exercitationem voluptate qui aperiam reiciendis quas suscipit porro nesciunt, blanditiis nostrum ad placeat cumque, rem possimus harum ipsum eveniet deleniti.</p>
+						<p>Eveniet esse nisi dolorem qui maiores dignissimos architecto, ea quis sapiente quaerat culpa rerum, unde odio incidunt placeat ducimus repudiandae?</p>
+					</div>
+				</div>
+				<div class="content">
+					<h3>content 2</h3>
+					<div>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique dolores amet accusantium, labore maxime, et deleniti aliquid totam culpa suscipit.</p>
+						<p>Enim, perspiciatis iure ex et minus. Neque provident repellendus delectus fugit alias dolor numquam dignissimos? Minima saepe, necessitatibus amet vero.</p>
+						<p>Quisquam odio nesciunt necessitatibus ab, facere ipsa debitis aut omnis deserunt dolore assumenda minima ut aspernatur, et voluptas quae, sunt.</p>
+						<p>Consequatur natus voluptate, debitis. Libero obcaecati dolore consectetur molestias illum dolorem vel illo ducimus rerum itaque. Reprehenderit, mollitia? Ipsa, praesentium.</p>
+					</div>
+				</div>
+				<div class="content">
+					<h3>content 3</h3>
+					<div>
+						<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Qui sunt non nisi similique quisquam voluptatibus, voluptate ab ad, possimus adipisci?</p>
+						<p>Eveniet et quaerat, tempora in. Veritatis facere possimus, cupiditate, omnis sed reiciendis tenetur deserunt? Omnis nulla at, nihil voluptatibus soluta!</p>
+						<p>Nemo, assumenda. Vitae doloribus exercitationem reprehenderit, velit nobis quidem voluptatem ipsam quas optio, officiis animi hic distinctio. Perferendis eaque, pariatur.</p>
+						<p>Molestias odio possimus, ipsa, repellendus id reiciendis eaque maiores labore fuga blanditiis esse vitae illo quibusdam. Totam natus iste animi.</p>
+					</div>
+				</div>
+				<div class="content">
+					<h3>content 4</h3>
+					<div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde cumque impedit at aut incidunt consequuntur harum commodi veniam totam deserunt.</p>
+						<p>Blanditiis mollitia modi totam dolorem, dolores, quasi autem iure nam unde voluptatum veritatis libero minus voluptas cum ratione laboriosam ipsam.</p>
+						<p>Praesentium, optio voluptatibus quibusdam mollitia tenetur odit quaerat sit est laudantium cumque dolores labore recusandae error libero eum impedit eaque.</p>
+						<p>Voluptatibus eligendi, impedit ad beatae. Assumenda, quis est harum modi explicabo reprehenderit, molestias libero adipisci fugiat consequuntur velit corrupti. A.</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

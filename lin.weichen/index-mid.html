@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animal Tracker</title>
+
+	<!-- <base href="/aau/wnm617/lin.weichen/"> -->
+
+	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+	<link rel="stylesheet" href="css/app.css">
+
+	<script src="lib/js/jquery-2.2.4.min.js"></script>
+
+	
+   <script src="js/signin.js"></script>
+   <script src="js/app.js"></script>
+<!-- lib before local -->
+	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	
+   <section data-role="page" id="signin-page" style="background-color:#ae7b47ff
+;">
+      <div data-role="main" class="display-flex flex-vertical">
+         <div class="logo"><img src="images/logo.png"></div>
+         <div class="flex-stretch"></div>
+         <div class="flex-none">
+            <div class="banner_text">
+               <h1>Sign in now!</h1>
+            </div>
+            <form class="form" id="signin-form" data-ajax="false" style="padding:1em">
+               <div class="form-control">
+                  <label for="signin-username" class="form-label">Username</label>
+                  <input class="form-input" type="text" id="signin-username" data-role="none">
+               </div>
+               <div class="form-control">
+                  <label for="signin-password" class="form-label">Password</label>
+                  <input class="form-input" type="password" id="signin-password" data-role="none">
+               </div>
+               <div class="form-control">
+                  <input type="submit" class="form-button" value="Sign In" data-role="none">
+               </div>
+            </form>
+            <div class="createnew">
+               <h3>Don't have an account?<span class="register"><a href="#">Register One</a></span></h3>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section data-role="page" id="recent-page">
+      <div data-role="main">
+         <form class="search-form">
+            <div class="search-control">
+               <input class="serch-input" type="search" name="s" placeholder="Search for places" data-role="none">
+               <!-- <button type="submit">Submit</button> -->
+            </div>
+         </form>
+      </div>
+         <!-- <hr>
+         <button data-activate=".changeme" data-role="none">Activate</button>
+         <button data-deactivate=".changeme" data-role="none">Deactivate</button>
+         <button data-toggle=".changeme" data-role="none">Toggle</button>
+         <hr>
+         <div class="changeme">This is a div</div> -->
+
+      <footer data-role="footer" data-template="#footer-template"></footer>
+   </section>
+
+
+
+
+
+
+
+
+
+<!-- List Page -->
+   <section data-role="page" id="list-page">
+      <header data-role="header">
+         <h1>Search</h1>
+         <!-- h1{position:ab} default in front -->
+         <ul>
+            <li class="flex-stretch"></li>
+            <li><a href="#" class="js-list-add-animal"
+               data-activate="#list-add-modal">&plus;</a></li>
+         </ul>
+         <!-- ul{position:re} now ul is in front, not back-->
+      </header>
+      <div data-role="main"><div class="overscroll">
+         <!-- ul>li*10>a[href=#animal-profile-page]>{Animal $} -->
+         <ul>
+            <li><a href="#animal-profile-page">Animal 1</a></li>
+            <li><a href="#animal-profile-page">Animal 2</a></li>
+            <li><a href="#animal-profile-page">Animal 3</a></li>
+            <li><a href="#animal-profile-page">Animal 4</a></li>
+            <li><a href="#animal-profile-page">Animal 5</a></li>
+            <li><a href="#animal-profile-page">Animal 6</a></li>
+            <li><a href="#animal-profile-page">Animal 7</a></li>
+            <li><a href="#animal-profile-page">Animal 8</a></li>
+            <li><a href="#animal-profile-page">Animal 9</a></li>
+            <li><a href="#animal-profile-page">Animal 10</a></li>
+            <li><a href="#animal-profile-page">Animal 1</a></li>
+            <li><a href="#animal-profile-page">Animal 2</a></li>
+            <li><a href="#animal-profile-page">Animal 3</a></li>
+            <li><a href="#animal-profile-page">Animal 4</a></li>
+            <li><a href="#animal-profile-page">Animal 5</a></li>
+            <li><a href="#animal-profile-page">Animal 6</a></li>
+            <li><a href="#animal-profile-page">Animal 7</a></li>
+            <li><a href="#animal-profile-page">Animal 8</a></li>
+            <li><a href="#animal-profile-page">Animal 9</a></li>
+            <li><a href="#animal-profile-page">Animal 10</a></li>
+            <li><a href="#animal-profile-page">Animal 1</a></li>
+            <li><a href="#animal-profile-page">Animal 2</a></li>
+            <li><a href="#animal-profile-page">Animal 3</a></li>
+            <li><a href="#animal-profile-page">Animal 4</a></li>
+            <li><a href="#animal-profile-page">Animal 5</a></li>
+            <li><a href="#animal-profile-page">Animal 6</a></li>
+            <li><a href="#animal-profile-page">Animal 7</a></li>
+            <li><a href="#animal-profile-page">Animal 8</a></li>
+            <li><a href="#animal-profile-page">Animal 9</a></li>
+         </ul>
+      </div></div>
+     
+      <!-- modal:佔據了整個屏幕 -->
+      <!-- popup(彈出窗口):用於的信息非常少; page:信息多 -->
+      
+      <footer data-role="footer" data-template="#footer-template"></footer>
+
+      <div class="modal" id="list-add-modal">
+         <div class="modal-back" data-deactivate="#list-add-modal"></div>
+         <form class="modal-popup" data-ajax="false" id="list-add-form">
+            <div class="modal-head">Head</div>
+            <div class="modal-body">
+               <div class="form-control">
+                  <label for="list-add-name" class="form-label">Name</label>
+                  <input class="form-input" type="text" id="list-add-name" data-role="none">
+               </div>
+               <div class="form-control">
+                  <label for="list-add-type" class="form-label">Type</label>
+                  <input class="form-input" type="text" id="list-add-type" data-role="none">
+               </div>
+               <div class="form-control">
+                  <label for="list-add-breed" class="form-label">Breed</label>
+                  <input class="form-input" type="text" id="list-add-breed" data-role="none">
+               </div>
+            </div>
+            <div class="modal-foot display-flex">
+               <div class="flex-stretch"></div>
+               <div class="flex-none">
+                  <a href="#" data-deactivate="#list-add-modal">Submit</a>
+               </div>
+            </div>          
+         </form>
+      </div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+   <!-- USER DATA SECTION -->
+
+   <section data-role="page" id="user-profile-page">
+      <div data-role="main">
+         Profile
+         <p>
+            <a href="#" class="js-logout">Sign Out</a>
+         </p>
+
+         <div class="floater top right">
+            <a href="#" class="icon" data-activate="#user-settings-modal"><img src="images/icons/shishkabob.svg" alt=""></a>
+         </div>
+
+
+         <div class="modal" id="user-settings-modal">
+            <div class="modal-drawer right">
+               <div class="modal-head display-flex">
+                  <div class="flex-none">Head</div>
+                  <div class="flex-stretch"></div>
+                  <div class="flex-none"><a href="#"data-deactivate="#user-settings-modal">&times;</a></div>
+               </div>
+               <div class="modal-body"><div class="overscroll">
+                  <!-- <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ipsum! Illo distinctio adipisci, repellat. Consectetur, rerum, in. Iste cumque ea, aperiam autem a iusto expedita minima eaque cupiditate hic dicta vitae quis sint minus adipisci corrupti aliquid necessitatibus illo, quia et repudiandae perspiciatis quo quam reiciendis. Ut eos dolor, possimus?</p>
+                  <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ipsum! Illo distinctio adipisci, repellat. Consectetur, rerum, in. Iste cumque ea, aperiam autem a iusto expedita minima eaque cupiditate hic dicta vitae quis sint minus adipisci corrupti aliquid necessitatibus illo, quia et repudiandae perspiciatis quo quam reiciendis. Ut eos dolor, possimus?</p>
+                  <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ipsum! Illo distinctio adipisci, repellat. Consectetur, rerum, in. Iste cumque ea, aperiam autem a iusto expedita minima eaque cupiditate hic dicta vitae quis sint minus adipisci corrupti aliquid necessitatibus illo, quia et repudiandae perspiciatis quo quam reiciendis. Ut eos dolor, possimus?</p> -->
+               </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer data-role="footer" data-template="#footer-template"></footer>
+   </section>
+   
+
+
+
+
+
+   <!--  ANIMAL DATA SECTION -->
+
+   <section data-role="page" id="animal-profile-page">
+      <header data-role="header">
+         <h1>Search</h1>
+         <ul>
+            <li><a href="#" data-rel="back">Back</a></li>
+         </ul>
+      </header>
+      <div data-role="main">
+         Animal Profile
+      </div>
+   </section>
+
+
+   <!-- <ul>
+      <li><a href="#recent-page"></a></li>
+      <li><a href="#list-page">List</a></li>
+      <li><a href="#user-profile-page">Profile</a></li>
+   </ul> -->
+
+
+
+   <!-- Footer Template -->
+
+   <script type="text/template" id="footer-template">
+   <ul>
+         <li><a href="#recent-page"><img src="images/icons/map.png"></a></li>
+         <li><a href="#list-page"><img src="images/icons/list.png"></a></li>
+         <li><a href="#user-profile-page"><img src="images/icons/user.png"></a></li>
+   </ul>
+   </script>
+   <script type="text/template" id="animal-link-template">
+   This is an animal link
+   </script>	
+</body>
+</html>

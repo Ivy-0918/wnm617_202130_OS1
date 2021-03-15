@@ -1,0 +1,64 @@
+/* CSS RESET */
+
+*, *::after, *::before {
+   box-sizing:border-box;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/*Accordion*/
+.accordion dt {
+    background-color: rgb(84, 151, 183);
+    color: white;
+    font-weight: bold;
+    padding: 0.5em calc(1em + 2px);
+}
+.accordion dt~dt {
+    margin-top: 1em;
+}
+
+.accordion dd {
+    padding: 1em;
+    margin-left: 0;
+    border: 2px solid #5497b7;
+    border-top-width:0;
+    display:none;
+}
+
+/*Tab Group*/
+.tabgroup .tabs {
+    display: flex;
+    border-bottom: 1px solid blue;
+}
+.tabgroup .tab {
+    padding: 0.5em 1em;
+    position: relative;
+}
+.tabgroup .tab:hover{
+	background-color: #eee;
+	cursor: pointer;
+}
+.tabgroup .tab::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: blue;
+	transition: all 0.3s;
+}
+.tabgroup .tab .active::after{
+	height: 3px;
+}
+.tabgroup .contents {
+    display: flex;
+    border-bottom: 1px solid blue;
+}
