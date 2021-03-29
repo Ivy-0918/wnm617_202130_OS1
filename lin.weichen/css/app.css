@@ -47,18 +47,32 @@ a:hover {
    text-decoration: underline;
 }
 
-.logo img{
-  height: 100%;
+li{
+  list-style: none;
+}
+
+/*.logo img{
+  height: auto;
   width: 50%;
   display: block;
+  position: relative;
   transform: translate(50%,50%);
 
+}*/
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 30px;
+    margin-top: 3em;
 }
 .banner_text {
     color: var(--color-main-light);
     font-size: 20px;
+    margin: 3em 0 20px 1em;
     /* margin: 0 20px 0; */
-    text-align: center;
+    /*text-align: center;*/
 }
 .createnew{
     color: var(--color-main-medium);
@@ -93,13 +107,20 @@ a:hover {
 .flex-justify-center { justify-content:center; }
 .flex-vertical { flex-direction:column; }
 
+
+/* */
 .overscroll{
   overflow: auto;
   height: 100%;
   width:100%;
 
 }
-
+.no-touch{
+  pointer-events: none;
+}
+.do-touch{
+  pointer-events: initial;
+}
 
 
 
@@ -193,6 +214,18 @@ a:hover {
     outline: 0;
     font:inherit;
 }
+.data-label {
+
+}
+.data-input {
+  display: inline-block;
+    width: 100%;
+    border-width: 0;
+    font: inherit;
+    padding: 0.5em 1em;
+    border-bottom: 1px solid var(--color-neutral-medium);
+    outline: 0;
+}
 .form-button {
     margin: 0;
     padding: 0.5em 1em;
@@ -212,21 +245,115 @@ a:hover {
    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 
 }
-
+.overscroll
 
 /*Search Form*/
 .search-control{
   margin: 1em;
 }
-input.serch-input {
-    width: 90%;
+input.search-input {
+    width: 95%;
     height: 30px;
     outline: 0;
     border-radius: 3em;
     border-width: 0;
     display: inline-block;
     padding: 0.5em 1.5em;
+    margin: 20px 10px 0 10px;
 }
+.hotdog{
+
+  display: flex;
+    border-radius: 2em;
+    font: inherit;
+    border-width: 0;
+    border: black solid 1px;
+    outline: 0;
+    margin: 1em;
+    height: 6%;
+
+
+ /* display: inline-flex;
+  width: 100%;
+  font-size: inherit;
+  background-color: var(--color-neutral-light);
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  border-width: 0;
+  outline: 0;
+  margin: 1em;
+  height: 6%;*/
+}
+
+.hotdog.input{
+  background-color: transparent;
+  border-width: 0;
+  flex: 1 1 100%;
+  outline: 0;
+  font: inherit;
+  height: 100%;
+  padding: 0.5em 1.5em;
+}
+.hotdog.stack>:first-child {
+    border-radius: 2em 0 0 2em;
+}
+.hotdog.stack>:last-child {
+    border-radius: 0 2em 2em 0;
+}
+.hotdog.stack button{
+  background-color: black;
+  color: white;
+  border-width: 0;
+  flex: 1 1 100%;
+  outline: 0;
+  font: inherit;
+  padding: 0.5em 1.5em;
+  /*flex: none;*/
+}
+
+/*sort*/
+.sort{
+  width: 100%;
+  height: 30px;
+  
+  
+}
+.sort.ui-select{
+  border-radius: 3em;
+  border-width: 0;
+  outline: 0;
+  border-color: var(--color-neutral-light) solid 2px;
+}
+
+/*List*/
+img.animal-list-image{
+  width: 45%;
+  padding: 4px;
+}
+img.animal-icons-trash{
+  width: 3%;
+  right: 6%;
+  position: absolute;
+  top: 40%;
+}
+
+/* card soft*/
+.card {
+    background-color: #ffffff;
+ /*   padding: 1em;*/
+    margin-top: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    overflow: hidden;
+}
+.card.soft {
+    margin: 10px;
+    border-radius: 0.8em;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+
+
 
 /* Modal:佔據了整個屏幕; */
 .modal {
@@ -278,6 +405,9 @@ overflow: hidden;*/
 .modal.active .modal-popup {
   transform: translate(-50%,-50%);
   pointer-events:initial;
+}
+.modal-popup.small{
+  width: initial;
 }
 
 .modal-drawer {
@@ -351,8 +481,8 @@ overflow: hidden;*/
 
 
 
-
 /* remove this later */
+.animal-top,
 #recent-page [data-role='main'] {
   background-image: url('../images/map.png');
   background-position:center;
@@ -360,6 +490,34 @@ overflow: hidden;*/
 }
 
 
+/* Animal Profile Page*/
+.user-top,
+.animal-top{
+  flex: none;
+  height: 35vh;
+}
+.user-bottom,
+.animal-bottom{
+  flex: 1 1 100%;
+  position: relative;
+  overflow: hidden;
+}
 
+.animal-profile-main{
+  display: flex; 
+  padding: 1em 0; 
+  text-align: center;
+  align-self: center;
+}
 
+/* User Profile Page*/
+.user-button,
+.user-content{
+  margin: 20px;
+}
+.user-top{
+  background-image: url('../images/user.png');
+  background-position:center;
+  background-size:cover;
 
+}

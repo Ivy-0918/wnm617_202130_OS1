@@ -19,13 +19,14 @@
 	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
+
+<!-- Sign In -->
 	
-   <section data-role="page" id="signin-page" style="background-color:#ae7b47ff
-;">
+   <section data-role="page" id="signin-page" style="background-color:#79542e;">
       <div data-role="main" class="display-flex flex-vertical">
-         <div class="logo"><img src="images/logo.png"></div>
-         <div class="flex-stretch"></div>
-         <div class="flex-none">
+         <div class="logo flex-none"><img src="images/logo.png" style="    width: 12em;"></div>
+        <!--  <div class="flex-stretch"></div> -->
+         <div class="flex-stretch">
             <div class="banner_text">
                <h1>Sign in now!</h1>
             </div>
@@ -49,15 +50,25 @@
       </div>
    </section>
 
-
+<!-- Recent Page -->
    <section data-role="page" id="recent-page">
       <div data-role="main">
          <form class="search-form">
             <div class="search-control">
-               <input class="serch-input" type="search" name="s" placeholder="Search for places" data-role="none">
+               <input class="search-input" type="search" name="s" placeholder="Search for places" data-role="none">
                <!-- <button type="submit">Submit</button> -->
             </div>
          </form>
+
+         <div class="map-icon-test icon" style="position: absolute; left: 30vw;top: 40vh; font-size: 1.4em;" data-activate="recent-test-modal">
+            <img src="images/icons/map2.png"> 
+         </div>
+
+         <div class="modal" id="recent-test-modal">
+            <div class="modal-popup small">
+               <div class="modal-body">popup</div>
+            </div>
+         </div>
       </div>
          <!-- <hr>
          <button data-activate=".changeme" data-role="none">Activate</button>
@@ -78,72 +89,157 @@
 
 
 <!-- List Page -->
-   <section data-role="page" id="list-page">
+   <section data-role="page" id="list-page" style="background-color: #79542e">
       <header data-role="header">
-         <h1>Search</h1>
+         <h1>Bear Category</h1>
          <!-- h1{position:ab} default in front -->
          <ul>
+            <!-- <li><a href="#" data-rel="back"><img src="images/icons/back.png" style="width: 10px;padding-top: 17px;"></a></li> -->
             <li class="flex-stretch"></li>
             <li><a href="#" class="js-list-add-animal"
-               data-activate="#list-add-modal">&plus;</a></li>
+               data-activate="#list-add-modal" style="font-size: 24px;
+               padding: 0 0.8em;">&plus;</a></li>
          </ul>
          <!-- ul{position:re} now ul is in front, not back-->
       </header>
-      <div data-role="main"><div class="overscroll">
+      <div data-role="main">
+         <div class="search-control">
+            <form class="search-form">
+                  <input class="search-input" type="search" name="s" placeholder="Search for places" data-role="none">
+                  <!-- <button type="submit">Submit</button> -->
+            </form>
+         </div>
+
+         <!-- <div class="sort">
+            <select>
+               <option value="1">Newest</option>
+               <option value="2">Oldest</option>
+            </select>
+         </div> -->
+
+         <div class="overscroll">
          <!-- ul>li*10>a[href=#animal-profile-page]>{Animal $} -->
-         <ul>
-            <li><a href="#animal-profile-page">Animal 1</a></li>
-            <li><a href="#animal-profile-page">Animal 2</a></li>
-            <li><a href="#animal-profile-page">Animal 3</a></li>
-            <li><a href="#animal-profile-page">Animal 4</a></li>
-            <li><a href="#animal-profile-page">Animal 5</a></li>
-            <li><a href="#animal-profile-page">Animal 6</a></li>
-            <li><a href="#animal-profile-page">Animal 7</a></li>
-            <li><a href="#animal-profile-page">Animal 8</a></li>
-            <li><a href="#animal-profile-page">Animal 9</a></li>
-            <li><a href="#animal-profile-page">Animal 10</a></li>
-            <li><a href="#animal-profile-page">Animal 1</a></li>
-            <li><a href="#animal-profile-page">Animal 2</a></li>
-            <li><a href="#animal-profile-page">Animal 3</a></li>
-            <li><a href="#animal-profile-page">Animal 4</a></li>
-            <li><a href="#animal-profile-page">Animal 5</a></li>
-            <li><a href="#animal-profile-page">Animal 6</a></li>
-            <li><a href="#animal-profile-page">Animal 7</a></li>
-            <li><a href="#animal-profile-page">Animal 8</a></li>
-            <li><a href="#animal-profile-page">Animal 9</a></li>
-            <li><a href="#animal-profile-page">Animal 10</a></li>
-            <li><a href="#animal-profile-page">Animal 1</a></li>
-            <li><a href="#animal-profile-page">Animal 2</a></li>
-            <li><a href="#animal-profile-page">Animal 3</a></li>
-            <li><a href="#animal-profile-page">Animal 4</a></li>
-            <li><a href="#animal-profile-page">Animal 5</a></li>
-            <li><a href="#animal-profile-page">Animal 6</a></li>
-            <li><a href="#animal-profile-page">Animal 7</a></li>
-            <li><a href="#animal-profile-page">Animal 8</a></li>
-            <li><a href="#animal-profile-page">Animal 9</a></li>
-         </ul>
-      </div></div>
+            
+            <div class="card soft">
+               <ul style="padding: 0 10px;">
+                  <li><a href="#animal-profile-page" class="animal-profile-main">
+                     <img class="animal-list-image" src="images/Brown-bear.jpg">
+               
+                     <div class="animal-list-detail">
+                        <h3>Name:</h3>
+                        <p>Brand:</p>
+                        <p>Location:</p>
+                     </div>
+               
+                     <img class="animal-icons-trash" src="images/icons/trash.png">
+                     </a>
+                  </li>            
+               </ul>
+            </div>
+            <div class="card soft">
+               <ul style="padding: 0 10px;">
+                  <li><a href="#animal-profile-page" class="animal-profile-main">
+                     <img class="animal-list-image" src="images/Brown-bear.jpg">
+               
+                     <div class="animal-list-detail">
+                        <h3>Name:</h3>
+                        <p>Brand:</p>
+                        <p>Location:</p>
+                     </div>
+               
+                     <img class="animal-icons-trash" src="images/icons/trash.png">
+                     </a>
+                  </li>            
+               </ul>
+            </div>
+            <div class="card soft">
+               <ul style="padding: 0 10px;">
+                  <li><a href="#animal-profile-page" class="animal-profile-main">
+                     <img class="animal-list-image" src="images/Brown-bear.jpg">
+               
+                     <div class="animal-list-detail">
+                        <h3>Name:</h3>
+                        <p>Brand:</p>
+                        <p>Location:</p>
+                     </div>
+               
+                     <img class="animal-icons-trash" src="images/icons/trash.png">
+                     </a>
+                  </li>            
+               </ul>
+            </div>
+            <div class="card soft">
+               <ul style="padding: 0 10px;">
+                  <li><a href="#animal-profile-page" class="animal-profile-main">
+                     <img class="animal-list-image" src="images/Brown-bear.jpg">
+               
+                     <div class="animal-list-detail">
+                        <h3>Name:</h3>
+                        <p>Brand:</p>
+                        <p>Location:</p>
+                     </div>
+               
+                     <img class="animal-icons-trash" src="images/icons/trash.png">
+                     </a>
+                  </li>            
+               </ul>
+            </div>
+            <div class="card soft">
+               <ul style="padding: 0 10px;">
+                  <li><a href="#animal-profile-page" class="animal-profile-main">
+                     <img class="animal-list-image" src="images/Brown-bear.jpg">
+               
+                     <div class="animal-list-detail">
+                        <h3>Name:</h3>
+                        <p>Brand:</p>
+                        <p>Location:</p>
+                     </div>
+               
+                     <img class="animal-icons-trash" src="images/icons/trash.png">
+                     </a>
+                  </li>            
+               </ul>
+            </div>
+            <div class="card soft">
+               <ul style="padding: 0 10px;">
+                  <li><a href="#animal-profile-page" class="animal-profile-main">
+                     <img class="animal-list-image" src="images/Brown-bear.jpg">
+               
+                     <div class="animal-list-detail">
+                        <h3>Name:</h3>
+                        <p>Brand:</p>
+                        <p>Location:</p>
+                     </div>
+               
+                     <img class="animal-icons-trash" src="images/icons/trash.png">
+                     </a>
+                  </li>            
+               </ul>
+            </div>
+         </div>
+      </div>
      
       <!-- modal:佔據了整個屏幕 -->
       <!-- popup(彈出窗口):用於的信息非常少; page:信息多 -->
       
       <footer data-role="footer" data-template="#footer-template"></footer>
 
+
       <div class="modal" id="list-add-modal">
          <div class="modal-back" data-deactivate="#list-add-modal"></div>
          <form class="modal-popup" data-ajax="false" id="list-add-form">
-            <div class="modal-head">Head</div>
+            <div class="modal-head">Add New</div>
             <div class="modal-body">
                <div class="form-control">
                   <label for="list-add-name" class="form-label">Name</label>
                   <input class="form-input" type="text" id="list-add-name" data-role="none">
                </div>
                <div class="form-control">
-                  <label for="list-add-type" class="form-label">Type</label>
+                  <label for="list-add-type" class="form-label">Breed</label>
                   <input class="form-input" type="text" id="list-add-type" data-role="none">
                </div>
                <div class="form-control">
-                  <label for="list-add-breed" class="form-label">Breed</label>
+                  <label for="list-add-breed" class="form-label">Location</label>
                   <input class="form-input" type="text" id="list-add-breed" data-role="none">
                </div>
             </div>
@@ -169,13 +265,39 @@
    <!-- USER DATA SECTION -->
 
    <section data-role="page" id="user-profile-page">
-      <div data-role="main">
-         Profile
-         <p>
-            <a href="#" class="js-logout">Sign Out</a>
-         </p>
+      <div data-role="main" class="display-flex flex-vertical">
+         <div class="user-top">
+            <img src="images/user.png" style="width: 8em; height: 8em; position: absolute;transform: translate(7%, -9em);">
+         </div>
+         
+         <div class="user-bottom" style="background-color: #79542e">
+            <div class="user-content">
+               <div class="form-control">
+                  <label for="list-add-breed" class="form-label">Name</label>
+                  <input class="form-input" type="text" id="list-add-breed" data-role="none">
+               </div>
+               <div class="form-control">
+                  <label for="list-add-breed" class="form-label">Location</label>
+                  <input class="form-input" type="text" id="list-add-breed" data-role="none">
+               </div>
+               <div class="form-control">
+                  <label for="list-add-breed" class="form-label">Email</label>
+                  <input class="form-input" type="text" id="list-add-breed" data-role="none">
+               </div>
+               <div class="form-control">
+                  <label for="list-add-breed" class="form-label">Password</label>
+                  <input class="form-input" type="text" id="list-add-breed" data-role="none">
+               </div>
+            </div>
 
-         <div class="floater top right">
+         <!-- <button>
+            <a href="#" class="js-logout">Sign Out</a>
+         </button> -->
+         <div class="user-button"><button type="button" class="form-button js-logout">Save</button></div>
+
+<!-- sheet icon -->
+
+         <!-- <div class="floater top right">
             <a href="#" class="icon" data-activate="#user-settings-modal"><img src="images/icons/shishkabob.svg" alt=""></a>
          </div>
 
@@ -188,13 +310,11 @@
                   <div class="flex-none"><a href="#"data-deactivate="#user-settings-modal">&times;</a></div>
                </div>
                <div class="modal-body"><div class="overscroll">
-                  <!-- <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ipsum! Illo distinctio adipisci, repellat. Consectetur, rerum, in. Iste cumque ea, aperiam autem a iusto expedita minima eaque cupiditate hic dicta vitae quis sint minus adipisci corrupti aliquid necessitatibus illo, quia et repudiandae perspiciatis quo quam reiciendis. Ut eos dolor, possimus?</p>
-                  <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ipsum! Illo distinctio adipisci, repellat. Consectetur, rerum, in. Iste cumque ea, aperiam autem a iusto expedita minima eaque cupiditate hic dicta vitae quis sint minus adipisci corrupti aliquid necessitatibus illo, quia et repudiandae perspiciatis quo quam reiciendis. Ut eos dolor, possimus?</p>
-                  <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Maxime, ipsum! Illo distinctio adipisci, repellat. Consectetur, rerum, in. Iste cumque ea, aperiam autem a iusto expedita minima eaque cupiditate hic dicta vitae quis sint minus adipisci corrupti aliquid necessitatibus illo, quia et repudiandae perspiciatis quo quam reiciendis. Ut eos dolor, possimus?</p> -->
+                  
                </div>
                </div>
             </div>
-         </div>
+         </div> -->
       </div>
       <footer data-role="footer" data-template="#footer-template"></footer>
    </section>
@@ -204,18 +324,108 @@
 
 
 
+
+
    <!--  ANIMAL DATA SECTION -->
 
    <section data-role="page" id="animal-profile-page">
-      <header data-role="header">
+      <!-- <header data-role="header">
          <h1>Search</h1>
          <ul>
             <li><a href="#" data-rel="back">Back</a></li>
          </ul>
+      </header> -->
+      <header data-role="header">
+         <ul>
+            <li class="flex-none"><a href="#" data-rel="back"><img src="images/icons/back.png" style="width: 10px;padding-top: 17px;"></a></li>
+            <li class="flex-stretch"></li>
+            <li class="flex-none"><a href="#" data-activate="#profile-add-modal"><img src="images/icons/edit.png"style="width: 10px;padding-top: 17px;"></a></li>
+         </ul>
       </header>
-      <div data-role="main">
-         Animal Profile
+
+      <div data-role="main" class="display-flex flex-vertical">
+         <div class="animal-top">
+
+         </div>
+            
+         <div class="animal-middle">
+            <img src="images/Brown-bear.jpg" style="border-radius: 50%; width: 8em; height: 8em; position: absolute;     transform: translate(7%, -9em);">
+         </div>
+         
+         <div class="animal-bottom">
+            <div class="overscroll">
+               <!-- <div class="data-content">
+                  <form>
+                     <div class="form-control">
+                        <label for="Name" class="data-label">Name</label>
+                        <input type="text" class="data-input" placeholder="Brand">
+                     </div>
+                  </form>
+               </div> -->
+               <div class="bottom-content" style="margin: 1em;">
+                  <h3>Name</h3>
+                  <p>North American Black Bear</p>
+                  
+                  <h3>Breed</h3>
+                  <p>Himalayan black bear, moon bear</p>
+                  
+                  <h3>Distribution Range</h3>
+                  <p>The North American Black Bear is the most common bear in North America ranging from the State of Florida north, into Canada and north to Alaska. The black and brown colour phase of the black bear is common. The white colour phase is more rare occuring in north western British Columbia, Canada.</p>
+                  
+                  <h3>Feature</h3>
+                  <p>The black bear is omnivorous. Their diet is mostly vegetable matter. Males reach full size at about 8 years of age. Females mate and produce cubs at 5 to 7 years of age, 8 years and older in the boreal forest regions(Ontario). Males weigh up to 280kg(600 pounds), occasionally much more. Black bears live up to 25 years in the wild. Older bears have been documented, however the majority of bears never reach old age due to human activity (hunting). </p>
+                  
+                  <h3>Location</h3>
+                  <p>701 Tennessee Valley Rd, Mill Valley, CA 94941, USA</p>
+               </div>
+               
+               
+            </div>
+         </div>
       </div>
+
+      <div class="modal" id="profile-add-modal">
+         <div class="modal-back" data-deactivate="#profile-add-modal"></div>
+         <form class="modal-popup" data-ajax="false" id="animal-profile-add-form">
+            <div class="modal-head">Edit</div>
+
+            <div class="modal-body">
+               <div class="form-control">
+                  <label for="list-add-name" class="form-label">Name</label>
+                  <input class="form-input" type="text" id="list-add-name" data-role="none">
+               </div>
+               
+               <div class="form-control">
+                  <label for="list-add-breed" class="form-label">Breed</label>
+                  <input class="form-input" type="text" id="list-add-breed" data-role="none">
+               </div>
+               <div class="form-control">
+                  <label for="list-add-type" class="form-label">Distribution Range</label>
+                  <input class="form-input" type="text" id="list-add-type" data-role="none">
+               </div>
+
+               <div class="form-control">
+                  <label for="list-add-breed" class="form-label">Feature</label>
+                  <input class="form-input" type="text" id="list-add-breed" data-role="none">
+               </div>
+               <div class="form-control">
+                  <label for="list-add-breed" class="form-label">Location</label>
+                  <input class="form-input" type="text" id="list-add-breed" data-role="none">
+               </div>
+            </div>
+            <div class="modal-foot display-flex">
+               <div class="flex-stretch"></div>
+               <div class="flex-none">
+                  <a href="#" data-deactivate="#list-add-modal">Submit</a>
+               </div>
+            </div>          
+         </form>
+      </div>
+   </section>
+
+<!-- Add New Page -->
+   <section data-role="page" id="add-new-page">
+      <
    </section>
 
 
