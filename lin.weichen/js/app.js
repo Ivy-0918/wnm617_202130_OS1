@@ -10,8 +10,12 @@
 // });
 
 //fetch: ask for data
-fetch('data/api.pjp')
-   
+fetch('data/api.php')
+   .then(d=>d.json())
+   .then(d=>{
+      console.log(d)
+   })
+
 
 
 $(()=>{

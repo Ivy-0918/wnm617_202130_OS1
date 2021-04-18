@@ -48,15 +48,15 @@ function makeStatement($data) {
    switch($t) {
       case "users_all":
          return makeQuery($c,"SELECT * FROM `track_202130_users`",$p);
-      case "animals_all":
-         return makeQuery($c,"SELECT * FROM `track_202130_animals`",$p);
-      case "locations_all":
-         return makeQuery($c,"SELECT * FROM `track_202130_locations`",$p);
+//       case "animals_all":
+//          return makeQuery($c,"SELECT * FROM `track_202130_animals`",$p);
+//       case "locations_all":
+//          return makeQuery($c,"SELECT * FROM `track_202130_locations`",$p);
 
-      case "check_signin":
-         return makeQuery($c,"SELECT id FROM `track_202130_users` WHERE username=? AND passwoed=md5(?)",$p);
+//       case "check_signin":
+//          return makeQuery($c,"SELECT id FROM `track_202130_users` WHERE username=? AND passwoed=md5(?)",$p);
 
-// do not open file in api.php, or you will see "error"
+// // do not open file in api.php, or you will see "error"
       default:
          return ["error"=>"No Matched Type"];
    }
@@ -68,6 +68,9 @@ echo json_encode(
    makeStatement($data),
    JSON_NUMERIC_CHECK
 );
+
+// $query = $_GET['q'];
+
 
 // echo json_encode(
 //    makeQuery(makeConn(),"SELECT * FROM track_202130_users",[]),
