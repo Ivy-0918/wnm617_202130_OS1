@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Terry Hopkins",
+    "username": "user1",
+    "email": "user1@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/795/fff/?text=user1",
+    "date_create": "2021-03-16 03:48:28"
+  },
+  {
+    "id": 2,
+    "name": "Jeannie Mcdaniel",
+    "username": "user2",
+    "email": "user2@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/976/fff/?text=user2",
+    "date_create": "2020-02-02 01:48:40"
+  },
+  {
+    "id": 3,
+    "name": "Camacho Gray",
+    "username": "user3",
+    "email": "user3@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/925/fff/?text=user3",
+    "date_create": "2020-07-30 02:04:02"
+  },
+  {
+    "id": 4,
+    "name": "Toni Clarke",
+    "username": "user4",
+    "email": "user4@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/860/fff/?text=user4",
+    "date_create": "2020-11-14 01:52:22"
+  },
+  {
+    "id": 5,
+    "name": "Hattie Buck",
+    "username": "user5",
+    "email": "user5@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/989/fff/?text=user5",
+    "date_create": "2021-01-08 09:17:03"
+  },
+  {
+    "id": 6,
+    "name": "Fowler Briggs",
+    "username": "user6",
+    "email": "user6@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/899/fff/?text=user6",
+    "date_create": "2020-02-17 04:35:01"
+  },
+  {
+    "id": 7,
+    "name": "June Gibson",
+    "username": "user7",
+    "email": "user7@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/856/fff/?text=user7",
+    "date_create": "2020-02-25 01:13:42"
+  },
+  {
+    "id": 8,
+    "name": "Cleveland Henry",
+    "username": "user8",
+    "email": "user8@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/848/fff/?text=user8",
+    "date_create": "2020-10-14 11:41:35"
+  },
+  {
+    "id": 9,
+    "name": "Velma Cross",
+    "username": "user9",
+    "email": "user9@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/904/fff/?text=user9",
+    "date_create": "2020-01-26 11:14:23"
+  },
+  {
+    "id": 10,
+    "name": "Roxie Patel",
+    "username": "user10",
+    "email": "user10@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/929/fff/?text=user10",
+    "date_create": "2020-09-13 05:41:36"
+  }
+]

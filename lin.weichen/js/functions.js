@@ -1,0 +1,2 @@
+//Promise
+const query = (option)=>

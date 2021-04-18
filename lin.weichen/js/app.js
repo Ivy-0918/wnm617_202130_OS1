@@ -9,6 +9,9 @@
 //  	console.log("honk")
 // });
 
+//fetch: ask for data
+fetch('data/api.pjp')
+   
 
 
 $(()=>{
@@ -16,6 +19,19 @@ $(()=>{
 	checkUserId();
 
 	$(document)
+
+   .on("pagecontainerbeforeshow", function(event,ui){
+      console.log(ui.toPage[0].id)
+
+      //PAGE ROUTING
+      switch(ui.toPage[0].id{
+         case "recent-page":RecentPage();break;
+         case "list-page":ListPage();break;
+         case "user-profile-page":UserProfilePage();break;
+         case "animal-profile-page":AnimalProfilePage();break;
+         
+      })
+   })
 
 	// (.on)該點基本上將鏈接到先前的選擇(document)
 
