@@ -12,7 +12,9 @@
 
 	<script src="lib/js/jquery-2.2.4.min.js"></script>
 
-	<script src="js/functions.js"></script>
+   <script src="js/functions.js"></script>
+   <script src="js/parts.js"></script>
+   <script src="js/pages.js"></script>
    <script src="js/signin.js"></script>
    <script src="js/app.js"></script>
 <!-- lib before local -->
@@ -118,9 +120,10 @@
          </div> -->
 
          <div class="overscroll">
-         <!-- ul>li*10>a[href=#animal-profile-page]>{Animal $} -->
+            <div class="animallist"></div>
+               
             
-            <div class="card soft">
+           <!--  <div class="card soft">
                <ul style="padding: 0 10px;">
                   <li><a href="#animal-profile-page" class="animal-profile-main">
                      <img class="animal-list-image" src="images/Brown-bear.jpg">
@@ -135,72 +138,8 @@
                      
                   </li>            
                </ul>
-            </div>
-            <div class="card soft">
-               <ul style="padding: 0 10px;">
-                  <li><a href="#animal-profile-page" class="animal-profile-main">
-                     <img class="animal-list-image" src="images/Brown-bear.jpg">
-               
-                     <div class="animal-list-detail">
-                        <h3>Name:</h3>
-                        <p>Brand:</p>
-                        <p>Location:</p>
-                     </div>
-                     </a>
-                     <img class="animal-icons-trash" src="images/icons/trash.png">
-                     
-                  </li>            
-               </ul>
-            </div>
-            <div class="card soft">
-               <ul style="padding: 0 10px;">
-                  <li><a href="#animal-profile-page" class="animal-profile-main">
-                     <img class="animal-list-image" src="images/Brown-bear.jpg">
-               
-                     <div class="animal-list-detail">
-                        <h3>Name:</h3>
-                        <p>Brand:</p>
-                        <p>Location:</p>
-                     </div>
-                     </a>
-                     <img class="animal-icons-trash" src="images/icons/trash.png">
-                     
-                  </li>            
-               </ul>
-            </div>
-            <div class="card soft">
-               <ul style="padding: 0 10px;">
-                  <li><a href="#animal-profile-page" class="animal-profile-main">
-                     <img class="animal-list-image" src="images/Brown-bear.jpg">
-               
-                     <div class="animal-list-detail">
-                        <h3>Name:</h3>
-                        <p>Brand:</p>
-                        <p>Location:</p>
-                     </div>
-                     </a>
-                     <img class="animal-icons-trash" src="images/icons/trash.png">
-                     
-                  </li>            
-               </ul>
-            </div>
-            <div class="card soft">
-               <ul style="padding: 0 10px;">
-                  <li><a href="#animal-profile-page" class="animal-profile-main">
-                     <img class="animal-list-image" src="images/Brown-bear.jpg">
-               
-                     <div class="animal-list-detail">
-                        <h3>Name:</h3>
-                        <p>Brand:</p>
-                        <p>Location:</p>
-                     </div>
-                     </a>
-                     <img class="animal-icons-trash" src="images/icons/trash.png">
-                     
-                  </li>            
-               </ul>
-            </div>
-            
+            </div> -->
+             
             
          </div>
       </div>
@@ -252,6 +191,7 @@
 
    <section data-role="page" id="user-profile-page">
       <div data-role="main" class="display-flex flex-vertical">
+         <div class="profile"></div>
          <div class="user-top">
             
          </div>
@@ -346,9 +286,18 @@
          <div class="animal-middle">
             <img src="images/Brown-bear.jpg" style="border-radius: 50%; width: 8em; height: 8em; position: absolute;     transform: translate(7%, -9em);">
          </div>
-         
+         <div class="header animal-nav">
+            <ul>
+               <li class="flex-stretch"><a href="#">map</a></li>
+               <li class="flex-stretch"><a href="#">info</a></li>
+            </ul>
+         </div>
+
+
          <div class="animal-bottom">
-            <div class="overscroll">
+            <div class="animal-bottom-section animal-map map"></div>
+            <div class="animal-bottom-section animal-info"></div>
+            <!-- <div class="overscroll"> -->
                <!-- <div class="data-content">
                   <form>
                      <div class="form-control">
@@ -357,7 +306,7 @@
                      </div>
                   </form>
                </div> -->
-               <div class="bottom-content" style="margin: 1em;">
+               <!-- <div class="bottom-content" style="margin: 1em;">
                   <h3>Name</h3>
                   <p>North American Black Bear</p>
                   
@@ -372,10 +321,10 @@
                   
                   <h3>Location</h3>
                   <p>701 Tennessee Valley Rd, Mill Valley, CA 94941, USA</p>
-               </div>
+               </div> -->
                
                
-            </div>
+            <!-- </div> -->
          </div>
       </div>
 

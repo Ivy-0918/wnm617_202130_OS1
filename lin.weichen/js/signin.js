@@ -5,32 +5,32 @@
 // 	console.log($("#signin-username").val())
 // }
 
-const checkSigninForm = () =>{
-	let username = $("#signin-username").val();
-	let password = $("#signin-password").val();
+const checkSigninForm = async () => {
+   let username = $("#signin-username").val();
+   let password = $("#signin-password").val();
 
-	if(username=='' || password=='') {
+   if(username=='' || password=='') {
       // warn that not all information is there
       return;
    }
 
+   let user = await query({
+      type:'check_signin',
+      params:[username,password]
+   });
 
-	let user = await query({
-		type:'check_signin',
-		params:[username,password]
-	});
+   console.log(user)
+   if(user.result.length > 0) {
+      console.log("logged in")
+      sessionStorage.userId = user.result[0].id;
 
-	
-	if(user.result.length > 0) {
-		console.log("logged in")
-		sessionStorage.userId = user.result[0].id;
+      $("#signin-form")[0].reset();
+   } else {
+      console.log("logged out")
+      sessionStorage.removeItem("userId");
+   }
 
-		$('#signin-form')[0].reset();
-	}else{
-		console.log("logged out")
-		sessionStorage.removeItem("userId");
-	}
-	checkUserId();
+   checkUserId();
 }
 
 const checkUserId = () =>{

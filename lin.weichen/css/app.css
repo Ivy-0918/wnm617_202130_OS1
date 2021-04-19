@@ -482,7 +482,7 @@ overflow: hidden;*/
 
 
 /* remove this later */
-.animal-top,
+/*.animal-top,*/
 #recent-page [data-role='main'] {
   background-image: url('../images/map.png');
   background-position:center;
@@ -495,6 +495,8 @@ overflow: hidden;*/
 .animal-top{
   flex: none;
   height: 35vh;
+  background-position: center;
+  background-size: cover;
 }
 .user-bottom,
 .animal-bottom{
@@ -509,6 +511,59 @@ overflow: hidden;*/
   text-align: center;
   align-self: center;
 }
+.animallist{
+  font-weight: normal;
+}
+.animallist-item{
+  font-weight: normal;
+  margin: 1em;
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 3px 8px 10px rgb(0 0 0 /20%);
+}
+.animallist-image{
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+.animallist-description{
+  padding: 1em;
+}
+.animallist-name{
+  font-size: 1.3em;
+}
+
+
+.animal-bottom-section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.animal-nav{
+  text-align: center;
+}
+.animal-nav li{
+  position: relative;
+}
+.animal-nav .active::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%
+  height:3px; 
+  background-color: var(--color-main-medium);
+}
+
+.animal-bottom-section{
+  display: none;
+}
+.animal-bottom-section .active{
+  display: block;
+}
 
 /* User Profile Page*/
 .user-button,
@@ -520,4 +575,13 @@ overflow: hidden;*/
   background-position:center;
   background-size:cover;
 
+}
+.user-profile-image{
+  text-align: center;
+  padding: 2em;
+}
+.user-profile-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
 }
