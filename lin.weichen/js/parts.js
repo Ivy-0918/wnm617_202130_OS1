@@ -10,6 +10,7 @@ const makeAnimalList = templater(o=>`
 </div>
 `);
 
+
 const makeUserProfile = o => `
 <div class="user-profile-image">
    <img src="${o.img}" alt="">

@@ -6,7 +6,7 @@ const ListPage = async () => {
       params:[sessionStorage.userId]
    });
 
-   console.log(animals)
+   console.log(animals);
 
    animal_template = animals.result.length?
       makeAnimalList(animals.result):
