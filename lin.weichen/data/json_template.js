@@ -1,3 +1,6 @@
+// https://json-generator.com
+// https://konbert.com/convert(json to SQL(jquery)
+
 // USERS DATA
 [
   '{{repeat(10)}}',
@@ -30,18 +33,24 @@
     
     name: '{{company()}}',
     
-    type: '{{random("dog","cat","bear")}}',
+    type: '{{random("Ursinae","Tremarctinae","Ailuropodinae")}}',
+    
     breed: function(tags) {
       var breeds = {
-        dog:["labrador","pitbull","dachsund"],
-        cat:["calico","ginger","tuxedo","siamese"],
-        bear:["polar","grizzly","sloth"]
+        Ursinae:["sun bear","brown bear","black bear"],
+        Tremarctinae:["grizzly bear","sloth bear"],
+        Ailuropodinae:["giant panda","polar bear"]
       };
       var chosen_type = breeds[this.type];
       var chosen_index = tags.integer(0,chosen_type.length-1);
       return chosen_type[chosen_index];
     },
+
+    color:'{{random("black","brown","white")}}',
     
+    length:'{{random("150cm","190cm","200cm")}}',
+   
+
     description: '{{lorem(3,"sentences")}}',
     img:function(tags) {
       return 'https://via.placeholder.com/400/'+
@@ -59,13 +68,13 @@
   {
     id: '{{index(1)}}',
     animal_id: '{{integer(1,50)}}',
-    
-    lat: '{{floating(37.792946, 37.968731)}}',
-    lng: '{{floating(-122.473425, -122.640483)}}',
+
+    lat: '{{floating(42.466089, 42.191295)}}',
+    lng: '{{floating(-124.189578, -123.725707)}}',
     
     description: '{{lorem(3,"sentences")}}',
     photo: 'https://via.placeholder.com/400/',
-    icon: 'https://via.placeholder.com/400/?text=ICON',
+    icon: 'images/icons/map3.png',
     date_create: '{{date(new Date(2020, 0, 1), new Date(), "YYYY-MM-dd hh:mm:ss")}}'
   }
 ]

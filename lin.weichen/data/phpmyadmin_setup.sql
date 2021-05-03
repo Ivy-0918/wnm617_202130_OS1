@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 10, 2021 at 03:36 AM
+-- Generation Time: May 02, 2021 at 04:58 AM
 -- Server version: 5.6.49-cll-lve
 -- PHP Version: 7.3.6
 
@@ -28,6 +28,8 @@ CREATE TABLE `track_202130_animals` (
   `name` varchar(64) NOT NULL,
   `type` varchar(16) NOT NULL,
   `breed` varchar(64) NOT NULL,
+  `color` varchar(64) NOT NULL,
+  `length` varchar(64) NOT NULL,
   `description` text NOT NULL,
   `img` varchar(256) NOT NULL,
   `date_create` datetime NOT NULL
@@ -42,8 +44,8 @@ CREATE TABLE `track_202130_animals` (
 CREATE TABLE `track_202130_locations` (
   `id` int(13) NOT NULL,
   `animal_id` int(13) NOT NULL,
-  `lat` decimal(10,0) NOT NULL,
-  `lng` decimal(11,0) NOT NULL,
+  `lat` decimal(10,8) NOT NULL,
+  `lng` decimal(11,8) NOT NULL,
   `description` text NOT NULL,
   `photo` varchar(256) NOT NULL,
   `icon` varchar(256) NOT NULL,
