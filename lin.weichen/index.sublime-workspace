@@ -1,0 +1,712 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"f",
+				"false"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"fle",
+				"flex-vertical"
+			],
+			[
+				"flex",
+				"flex-stretch"
+			],
+			[
+				"map",
+				"map_el"
+			],
+			[
+				"Mar",
+				"Marker"
+			],
+			[
+				"l",
+				"lng"
+			],
+			[
+				"col",
+				"color-main-medium"
+			],
+			[
+				"flex-",
+				"flex-stretch"
+			],
+			[
+				"animal",
+				"animallist"
+			],
+			[
+				"bac",
+				"background-image\tproperty"
+			],
+			[
+				"form-",
+				"form-label"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"displ",
+				"display-flex"
+			],
+			[
+				"an",
+				"animal"
+			],
+			[
+				"p",
+				"placeholder\tAttr"
+			],
+			[
+				"te",
+				"text-decoration-style\tproperty"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"bac-c",
+				"background-color\tproperty"
+			],
+			[
+				"trans",
+				"transition\tproperty"
+			],
+			[
+				"colo",
+				"color-white"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"tra",
+				"translate()\ttransform"
+			],
+			[
+				"head",
+				"header\tTag"
+			],
+			[
+				"backgro",
+				"background-color\tproperty"
+			],
+			[
+				"posi",
+				"position\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"te-a",
+				"text-align\tproperty"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"margi",
+				"margin-top\tproperty"
+			],
+			[
+				"me",
+				"meta\tTag"
+			],
+			[
+				"back-c",
+				"background-color\tproperty"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"fon-s",
+				"font-size\tproperty"
+			],
+			[
+				"tex-a",
+				"text-align\tproperty"
+			],
+			[
+				"box-",
+				"box-shadow\tproperty"
+			],
+			[
+				"min",
+				"min-height\tproperty"
+			],
+			[
+				"ca",
+				"Category"
+			],
+			[
+				"border-r",
+				"border-radius\tproperty"
+			],
+			[
+				"class",
+				"class\tAttr"
+			],
+			[
+				"bor",
+				"border-width\tproperty"
+			],
+			[
+				"style",
+				"style"
+			],
+			[
+				"disp",
+				"display-inline-block"
+			],
+			[
+				"ver",
+				"vertical"
+			],
+			[
+				"col-md-",
+				"col-md-6"
+			],
+			[
+				"sty",
+				"styleguide"
+			],
+			[
+				"bo",
+				"bottom\tproperty"
+			],
+			[
+				"margin",
+				"margin\tproperty"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"align",
+				"align-items\tproperty"
+			],
+			[
+				"fig",
+				"figcaption\tTag"
+			],
+			[
+				"co",
+				"color-neutral-medium"
+			],
+			[
+				"st",
+				"style\tAttr"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"text",
+				"text-decoration-line\tproperty"
+			],
+			[
+				"dis",
+				"display-flex"
+			],
+			[
+				"boder",
+				"border-radius\tproperty"
+			],
+			[
+				"dec",
+				"text-decoration\tproperty"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"har",
+				"hard-card"
+			],
+			[
+				"basic",
+				"basic-card"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"lis",
+				"list-style-type\tproperty"
+			],
+			[
+				"space",
+				"space-between\tjustify-content"
+			],
+			[
+				"ba",
+				"basic-grid"
+			],
+			[
+				"bas",
+				"base\tTag"
+			],
+			[
+				"blo",
+				"block\tdisplay"
+			],
+			[
+				"gr",
+				"grid-gap\tproperty"
+			],
+			[
+				"mat",
+				"margin-top\tproperty"
+			],
+			[
+				"he",
+				"height\tproperty"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"bacc",
+				"background-color\tproperty"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"u",
+				"ul\tTag"
+			],
+			[
+				"row",
+				"row-reverse\tflex-direction"
+			],
+			[
+				"inlin",
+				"inline-block\tdisplay"
+			],
+			[
+				"sp",
+				"space-between\tjustify-content"
+			],
+			[
+				"marg",
+				"margin\tproperty"
+			],
+			[
+				"s",
+				"sticky\tposition"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"car",
+				"carousel"
+			],
+			[
+				"butt",
+				"buttondiv"
+			],
+			[
+				"re",
+				"removeClass"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"num",
+				"number0fSlides-1"
+			],
+			[
+				"tab",
+				"tab-group"
+			],
+			[
+				"ta",
+				"tab-group"
+			],
+			[
+				"pa",
+				"padding-right\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"h",
+				"height\tproperty"
+			],
+			[
+				"fo",
+				"form\tTag"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"a",
+				"a"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"wra",
+				"Emmet: Wrap with Abbreviation"
+			],
+			[
+				"wrap",
+				"Emmet: Wrap with Abbreviation"
+			],
+			[
+				"w",
+				"Emmet: Wrap with Abbreviation"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"wr",
+				"Emmet: Wrap with Abbreviation"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ivylin/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ivylin/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/css/app.css",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/js/map.js",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/data/json_template.js",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/js/app.js",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/data/phpmyadmin_setup.sql",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/data/animal_data.json",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/data/track_202130_locations.sql",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/data/location_data.json",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/data/track_202130_animals.sql",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/js/functions.js",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/js/signin.js",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/lib/js/jquery.mobile-1.4.5.min.js",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/lib/js/jquery-2.2.4.min.js",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/data/api.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/js/parts.js",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/index.html",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/data/auth_example.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/data/auth.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/data/track_202130_users.sql",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/data/user_data.json",
+		"/Users/ivylin/Downloads/track_202103_locations.sql",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/images/icons/search.svg",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/images/icons/shishkabob.svg",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/README.md",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/lib/css/jquery.mobile.structure-1.4.5.min.css",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/css/style.css",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/demo/jquery.html",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/demo/jquery_mobile.html",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/README.md",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/initializr/css/theme.css",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm617/lin.weichen/initializr/index.html",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/styleguide/img/icons/cart.svg",
+		"/Users/ivylin/Desktop/Spring-semester/WNM601/m07_Ivy_midterm/style.css",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/lib/css/styleguide.css",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/css/storetheme.css",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/admin/index.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/product_list.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/parts/templates.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/lib/php/functions.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/parts/category.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/parts/footer.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/parts/popular.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/parts/navbar.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/parts/adminnavbar.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/product_confirmation.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/product_checkout.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/product_cart.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/product_item.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/index.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/product_added_to_cart.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/parts/meta.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/about.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/lib/css/cone.css",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/styleguide/index.html",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/parts/searchbar.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/styleguide/img/icons/trash.svg",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/js/products.js",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/data/products copy.sql",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/product_actions.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/data/api.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/lib/php/auth.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/index.html",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/lib/php/auth_example.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/demo/reading_data.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/demo/learning.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/demo/users_admin.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/demo/test.php",
+		"/Users/ivylin/Downloads/products.sql",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/demo/json_notes.json",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/demo/users.json",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/demo/count().php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/added_to_cart.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/codeview.php",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/styleguide/img/icons/lock.svg",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/styleguide/img/icons/<svg xmlns=\"http:::www.w3.org:2000:svg\" viewBox=\"0",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/lib/css/gridsystem.css",
+		"/Users/ivylin/Desktop/html.index",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/demo/grid.html",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/recipes/index.html",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm608/lin.weichen/readme.md",
+		"/Users/ivylin/Desktop/ivy0918/aau/wnm608/lin.weichen/recipes/index.html",
+		"/Users/ivylin/Desktop/ivy0918/aau/wnm608/lin.weichen/index.html",
+		"/Users/ivylin/Desktop/ivy0918/public_html/aau/wnm601/final/gallery.html",
+		"/Users/ivylin/Desktop/ivy0918/aau/wnm608/lin.weichen/readme.md",
+		"/Users/ivylin/Desktop/WNM601/Responsive Navigation Bar Tutorial/style.css",
+		"/Users/ivylin/Desktop/WNM601/layout/layout.html",
+		"/Users/ivylin/Desktop/WNM601/layout/style.css",
+		"/Users/ivylin/Desktop/WNM601/layout.html",
+		"/Users/ivylin/Desktop/WNM601/Responsive Navigation Bar Tutorial/Resnavbar.html",
+		"/Users/ivylin/Desktop/practice-html,css,js/script.js",
+		"/Users/ivylin/Desktop/practice-html,css,js/practice.html",
+		"/Users/ivylin/Desktop/practice-html,css,js/style.css",
+		"/Users/ivylin/Desktop/practice-html,css,js/starbucks.css",
+		"/Users/ivylin/Desktop/practice-html,css,js/starbucks.html",
+		"/Users/ivylin/Desktop/practice.html",
+		"/Users/ivylin/Desktop/七角錐網頁練習/七號錐.html",
+		"/Users/ivylin/Desktop/ex.html",
+		"/Users/ivylin/Desktop/exhibition",
+		"/Users/ivylin/Desktop/index.html",
+		"/Users/ivylin/Desktop/main.js",
+		"/Users/ivylin/Downloads/final. project/script.js",
+		"/Users/ivylin/Downloads/final. project/style.css",
+		"/Users/ivylin/Downloads/final. project/museum.html",
+		"/Users/ivylin/Downloads/final. project/exhibition.html",
+		"/Users/ivylin/Downloads/final. project/gallery.html",
+		"/Users/ivylin/Desktop/final. project/script copy.js",
+		"/Users/ivylin/Desktop/final. project2/style.css",
+		"/Users/ivylin/Desktop/final. project2/museum.html",
+		"/Users/ivylin/Desktop/final. project2/gallery.html",
+		"/Users/ivylin/Desktop/final. project2/index.html",
+		"/Users/ivylin/Desktop/final. project2/exhibition.html",
+		"/Users/ivylin/Desktop/final. project/gallery copy.html",
+		"/Users/ivylin/Desktop/final. project/exhibition copy.html",
+		"/Users/ivylin/Desktop/final. project/style copy.css",
+		"/Users/ivylin/Desktop/final. project/index copy.html",
+		"/Users/ivylin/Desktop/final. project/gallery.html",
+		"/Users/ivylin/Downloads/Final project_part 6/museum.html",
+		"/Users/ivylin/Desktop/WNM601/filmstrip: imagezoom/imagezoom.js",
+		"/Users/ivylin/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/8057566d4758f4bded542f2862c9801d/Message/MessageTemp/eead9d61fcbdc663aede0b8a6f2e9676/File/lightbox.html",
+		"/Users/ivylin/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/8057566d4758f4bded542f2862c9801d/Message/MessageTemp/eead9d61fcbdc663aede0b8a6f2e9676/File/lightbox.js",
+		"/Users/ivylin/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/8057566d4758f4bded542f2862c9801d/Message/MessageTemp/eead9d61fcbdc663aede0b8a6f2e9676/File/lightbox.css",
+		"/Users/ivylin/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/8057566d4758f4bded542f2862c9801d/Message/MessageTemp/eead9d61fcbdc663aede0b8a6f2e9676/File/styles.css",
+		"/Users/ivylin/Desktop/m13/style.css",
+		"/Users/ivylin/Desktop/final. project/script.js",
+		"/Users/ivylin/Desktop/final. project/style.css",
+		"/Users/ivylin/Desktop/final. project/index.html"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SFTP":
+	{
+		"height": 117.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 204.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"untitled"
+			],
+			[
+				"i",
+				"~/Desktop/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

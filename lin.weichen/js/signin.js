@@ -35,7 +35,7 @@ const checkSigninForm = async () => {
 }
 
 const checkUserId = () =>{
-	let p = ["#signin-page","#signup-page",""];
+	let p = ["#signin-page","#signup-page","#signup-second-page",""];
 	
 	if(sessionStorage.userId===undefined){//如果沒登入，
 //用戶ID唯一可以相等的是未定義的
@@ -55,12 +55,8 @@ const checkUserId = () =>{
 //localStorage: storage small data, like images
 	
 
-// const checkUserId = () =>{
-// 	let p =["#signin-page,#signup-page",""];
 
-// 	if(sessionStorage.userId === undefined){
-// 		//Not logged in
-// 	}else{
-// 		//logged in
-// 	}
-// }
+
+
+
+
