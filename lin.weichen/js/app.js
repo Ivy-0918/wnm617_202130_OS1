@@ -53,6 +53,7 @@ $(()=>{
          case "user-edit-page": UserEditPage(); break;
          case "user-password-page": UserPasswordPage(); break;
          case "user-upload-page": UserUploadPage(); break;
+         case "user-upload-page": UserUploadPage(); break;
          case "animal-profile-page": AnimalProfilePage(); break;
          case "animal-edit-page": AnimalEditPage(); break;
          case "animal-add-page": AnimalAddPage(); break;

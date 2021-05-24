@@ -4,7 +4,7 @@ const makeAnimalList = templater(o=>`
    <div class="flex-none animallist-image"><img src="${o.img}" alt=""></div>
    <div class="animallist-description flex-stretch">
       <div class="animallist-name">${o.name}</div>
-      <div class="animallist-info">${o.type}, ${o.breed}, ${o.color}, ${o.length}</div>
+      <div class="animallist-info">${o.breed}, ${o.color}, ${o.length}</div>
    </div>
    
 </div>
@@ -14,10 +14,6 @@ const makeAnimalList = templater(o=>`
 const makeUserProfile = o => `
 <div class="user-profile-image">
    <img src="${o.img}" alt="">
-
-   <div class="floater bottom right">
-      <a href="#user-upload-page" class="icon"><img src="img/icon/pencil.svg" alt=""></a>
-   </div>
 </div>
 <div class="user-profile-description">
    <div class="user-profile-name">${o.name}</div>
@@ -25,15 +21,40 @@ const makeUserProfile = o => `
 </div>
 `;
 
-const makeAnimalInfo = o => `
-<div class="animal-name">${o.name}</div>
-<div class="animal-type">${o.type}</div>
-<div class="animal-breed">${o.breed}</div>
+const makeUserEditPhoto = o => `
+<div class="user-profile-image">
+   <img src="${o.img}" alt="">
 
-<div class="animal-color">${o.color}</div>
-<div class="animal-length">${o.length}</div>
-<div class="animal-description"><p>${o.description}</p></div>
-<button class="form-button animal-delete" data-id="${o.id}">Delete</button>
+   <div class="floater bottom right">
+      <a href="#user-upload-page" class="user-upload-photo"><img src="images/icons/upload.png" alt=""></a>
+   </div>
+</div>
+`
+;
+
+const makeAnimalInfo = o => `
+<div class="animal-info-div">
+   <div class="animal-info-title">Name</div>
+   <div class="animal-content">${o.name}</div>
+</div>
+<div class="animal-info-div">
+   <div class="animal-info-title">Breed</div>
+   <div class="animal-content">${o.breed}</div>
+</div>
+<div class="animal-info-div">
+   <div class="animal-info-title">Color</div>
+   <div class="animal-content">${o.color}</div>
+</div>
+<div class="animal-info-div">
+   <div class="animal-info-title">Length</div>
+   <div class="animal-content">${o.length}</div>
+</div>
+<div class="animal-info-div">
+   <div class="animal-info-title">Description</div>
+   <div class="animal-content"><p>${o.description}</p></div>
+</div>
+
+<button class=" animal-delete floater top right" data-id="${o.id}"><img src="images/icons/trash.png" alt=""></button>
 `;
 
 
@@ -44,7 +65,7 @@ const makeAnimalPopup = o => `
    </div>
    <div class="flex-none" style="padding:1em">
       <div class="animal-name">${o.name}</div>
-      <div class="animal-type">${o.type}</div>
+
       <div class="animal-breed">${o.breed}</div>
 
       <div class="animal-color">${o.color}</div>
@@ -97,14 +118,6 @@ ${FormControlInput({
    type:'text',
    placeholder:'Type The Animal Name',
    value:o.name
-})}
-${FormControlInput({
-   namespace:namespace,
-   name:'type',
-   displayname:'Type',
-   type:'text',
-   placeholder:'Type The Animal Type',
-   value:o.type
 })}
 ${FormControlInput({
    namespace:namespace,
@@ -224,8 +237,7 @@ const capitalize = s => s[0].toUpperCase()+s.substr(1);
 
 const filterList = (animals,color) => {
    let a = [...(new Set(animals.map(o=>o[color])))];
-   return templater(o=>o?`<li class="filter" data-field="${color}"
-    data-value="${o}">${capitalize(o)}</li>`:'')(a);
+   return templater(o=>o?`<li class="filter" data-field="${color}" data-value="${o}">${capitalize(o)}</li>`:'')(a);
 }
 
 // optional add icon image
@@ -243,10 +255,14 @@ const makeFilterList = (animals) => {
    <li class="filter" data-field="color" data-value="">All</li>
    |
    ${filterList(animals,'color')}
-   |
-   ${filterList(animals,'breed')}
+
    `
 }
+
+
+
+
+
 
 
 

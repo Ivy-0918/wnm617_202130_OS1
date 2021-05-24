@@ -15,6 +15,10 @@
    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
    <!-- icon color -->
 
+   <!-- font choice -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
 	<link rel="stylesheet" href="css/app.css">
 
@@ -165,8 +169,8 @@
 
 
 <!-- List Page -->
-   <section data-role="page" id="list-page" style="background-color: #79542e">
-      <header data-role="header" class="text-align:center;">
+   <section data-role="page" id="list-page" style="background-color: #fff">
+      <header data-role="header" class="text-align:center;" style="background-color:#6a4219ff">
          <h1>Bear List</h1>
          <ul>
             <li class="flex-stretch"></li>
@@ -176,21 +180,26 @@
 
    
       <div data-role="main">
-         <div class="search-control">
-            <form data-ajax="false" id="list-search" class="hotdog">
-               <input type="search" id="list-search-value" data-role="none" placeholder="Search">
-            </form>
-         </div>
-         <div class="sort-control">
-            <ul class="filter-set"></ul>
-         </div>
-
          <div class="overscroll">
+         
+            <div class="search-control">
+               <form data-ajax="false" id="list-search" class="hotdog">
+                  <i class="icon"><img src="images/icons/search.png" alt=""></i>
+                  <input type="search" id="list-search-value" data-role="none" placeholder="Search">
+               </form>
+            </div>
+
+            <div class="sort-control">
+               <ul class="filter-set"></ul>
+            </div>
+
+
             <div class="animallist"></div>
          </div>
       </div>
 
       <footer data-role="footer" data-template="#footer-template" ></footer>
+   </section>
          
 <!-- Original Search-form  -->
 <!-- <div class="search-control">
@@ -215,33 +224,7 @@
    <!-- modal:佔據了整個屏幕 -->
    <!-- popup(彈出窗口):用於的信息非常少; page:信息多 -->
 
-      <div class="modal" id="list-add-modal">
-         <div class="modal-back" data-deactivate="#list-add-modal"></div>
-         <form class="modal-popup" data-ajax="false" id="list-add-form">
-            <div class="modal-head">Add New</div>
-            <div class="modal-body">
-               <div class="form-control">
-                  <label for="list-add-name" class="form-label">Name</label>
-                  <input class="form-input" type="text" id="list-add-name" data-role="none">
-               </div>
-               <div class="form-control">
-                  <label for="list-add-type" class="form-label">Breed</label>
-                  <input class="form-input" type="text" id="list-add-type" data-role="none">
-               </div>
-               <div class="form-control">
-                  <label for="list-add-breed" class="form-label">Location</label>
-                  <input class="form-input" type="text" id="list-add-breed" data-role="none">
-               </div>
-            </div>
-            <div class="modal-foot display-flex">
-               <div class="flex-stretch"></div>
-               <div class="flex-none">
-                  <a href="#" data-deactivate="#list-add-modal">Submit</a>
-               </div>
-            </div>          
-         </form>
-      </div>
-   </section>
+
 
 
 
@@ -255,17 +238,45 @@
    <!-- USER DATA SECTION -->
 
    <section data-role="page" id="user-profile-page">
+      <header data-role="header">
+         <h1>User Profile</h1>
+      </header>
       <div data-role="main" class="display-flex flex-vertical">
          <div class="profile"></div>
 
 
-         <div class="floater top right">
+         <!-- <div class="floater top right">
             <a href="#" class="icon" data-activate="#user-settings-modal"><img src="img/icon/shishkabob.svg" alt=""></a>
+         </div> -->
+
+
+
+         <div style="margin-top: 10px">
+            <div class="user-setting-content">
+               <a href="#user-edit-page">
+            <i class="user-edit-icon floater right"><img src="images/icons/next.png"></i>
+         Change Profile</a>
+            </div> 
+         </div>
+         <div style="margin-top: 10px">
+            <div class="user-setting-content">
+               <a href="#user-password-page">
+            <i class="user-edit-icon floater right"><img src="images/icons/next.png"></i>
+         Change Password</a>
+            </div> 
+         </div>
+         <div style="margin-top: 10px">
+            <div class="user-setting-content">
+               <a href="#" class="js-logout">
+            <i class="user-edit-icon floater right"><img src="images/icons/next.png"></i>
+         Sign out</a>
+            </div> 
          </div>
 
 
+
 <!-- User Setting Modal -->
-         <div class="modal" id="user-settings-modal">
+         <!-- <div class="modal" id="user-settings-modal">
             <div class="modal-drawer right">
                <div class="modal-head display-flex">
                   <div class="flex-none">Settings</div>
@@ -281,7 +292,7 @@
                </div>
                </div>
             </div>
-         </div>
+         </div> -->
       </div>
 
       <footer data-role="footer" data-template="#footer-template"></footer>
@@ -306,7 +317,19 @@
       </header>
       <div data-role="main" class="display-flex flex-vertical">
          <div class="overscroll">
+            <div class="user-edit-photo"></div>
+               <!-- <div class="user-profile-image">
+                  <img src="images/user.jpg">
+                  <div class="floater bottom right">
+                     <a href="#user-upload-page" class="icon"><img src="img/icon/pencil.svg" alt=""></a>
+                  </div>
+               </div> -->
+
             <form id="user-edit-form" data-ajax="false" style="padding:1em"></form>
+
+            <!-- <div class="form-control" style="margin:0 2em;">
+               <input type="submit" class="form-button flower-edit-submit" value="Save" data-role="none">
+            </div> -->
          </div>
       </div>
    </section>
@@ -345,8 +368,9 @@
                <label class="image-uploader full">
                   <input type="file" data-role="none" id="user-upload-input">
                </label>
-               <label for="user-upload-input" class="floater bottom left">
-                  <img src="img/icon/camera.svg" alt="" class="icon">
+
+               <label for="user-upload-input" class="floater bottom right">
+                  <img src="images/icons/upload.png" class="icon" style="width: 4.5em;height: 4.5em;margin-bottom: 7em;">
                </label>
             </form>
          </div>
@@ -367,15 +391,18 @@
             <!-- style="background-image: linear-gradient(180deg, #ffffff96, #ffffff00);" -->
                <ul>
                   <li class="flex-none do-touch"><a href="#" data-rel="back"><img src="images/icons/back.png" style="width: 10px;padding-top: 17px;"></a></li>
+
                   <li class="flex-stretch"></li>
-                  <li class="flex-none do-touch"><a href="#animal-edit-page"><img src="images/icons/edit.png"style="width: 10px;padding-top: 17px;"></a></li>
+
+                  <li class="flex-none do-touch"><a href="#animal-edit-page"><img src="images/icons/edit.png"style="width: 15px;padding-top: 17px;"></a></li>
                </ul>
             </div>
 
-            <div class="floater bottom right" style="font-size:1.5em">
+<!-- upload image -->
+            <div class="floater bottom right" style="font-size:3em">
                <form class="icon" data-ajax="false" id="animal-update-image-form">
                   <input type="file" id="animal-update-image-input" class="hidden" data-role="none">
-                  <label for="animal-update-image-input" style="margin:0"><img src="images/icons/edit.png" alt=""></label>
+                  <label for="animal-update-image-input" style="margin:0"><img src="images/icons/upload.png" alt=""></label>
                </form>
             </div>
 

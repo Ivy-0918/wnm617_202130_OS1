@@ -1,3 +1,6 @@
+
+
+
 /* CSS RESET */
 
 *, *::after, *::before {
@@ -5,18 +8,27 @@
 }
 
 :root {
+/* Font */
    --font-sans:Helvetica, Arial, sans-serif;
    --font-serif:Cambria, Georgia, serif;
 
+   --font-serif:'Roboto Condensed', sans-serif;;
+   --font-sans:'Lato', sans-serif;;
 
+/* Button */
    --color-neutral-light:#f79339;
    /* 橘黃 */
-   --color-neutral-medium:#f79339ff;
-   --color-neutral-dark:#343030;
+   --color-neutral-medium:#A67A29;
+   /* 宗 */
 
+
+/* font */
    --color-main-light:#fdc838ff;
+   /* 亮黃 */
    --color-main-medium:#6a4219ff;
-   --color-main-dark:#0a4349;
+   /* 咖啡 */
+
+
 
    --color-white:#fff;
    --color-black:#111;
@@ -116,14 +128,9 @@ li{
   overflow: auto;
   height: 100%;
   width:100%;
-
 }
-.no-touch{
-  pointer-events: none;
-}
-.do-touch{
-  pointer-events: initial;
-}
+.no-touch { pointer-events:none; }
+.do-touch { pointer-events:all; }
 
 
 
@@ -217,9 +224,12 @@ li{
 /* ICONS */
 .icon svg,
 .icon img {
-  width:2em;
-  height:2em;
+  width:1em;
+  height:1em;
   vertical-align: text-bottom;
+}
+i.icon{
+  padding: 10px 0 10px 15px;
 }
 
 /* Navbar*/
@@ -448,7 +458,7 @@ input.search-input {
     display: inline-flex;
     width: 100%;
     border-width: 0;
-    background-color: var(--color-neutral-light);
+    background-color: #F2B872;
     border-radius: 2em;
 }
 .hotdog>input {
@@ -772,8 +782,6 @@ overflow: hidden;*/
   font-size: 1.3em;
 }
 
-
-
 .animal-image-thumb img{
   width: 6em;
   height: 6em;
@@ -817,16 +825,46 @@ overflow: hidden;*/
 .animal-bottom-section.active {
   display:block;
 }
+
+
+/*Animal Info*/
 .animal-info{
   padding: 1em;
 }
+.animal-info-div{
+  display: block;
+  margin: 1em;
+  border-bottom:1px solid var(--color-main-medium);
 
+
+}
+.animal-info-title{
+  font-size: 17px;
+  font-family:var(--font-serif);
+  color: var(--color-main-light);
+
+
+
+}
+.animal-content{
+  font-size:20px;
+  font-family:var(--font-sans);
+  padding-bottom: 10px;
+  
+}
+.animal-delete img{
+  width: 1em;
+  height: 1em;
+  padding: 1em;
+
+}
 
 
 /* User Profile Page*/
 .user-button,
 .user-content{
   margin: 20px;
+  /*text-align: center;*/
 }
 .user-top{
 /*  background-image: url('../images/men.jpg');*/
@@ -834,13 +872,28 @@ overflow: hidden;*/
   background-size:cover;
 }
 
+.user-profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.user-profile-email{
+  font-size:20px;
+  /*  font-weight: bold;*/
+    margin-bottom: 3px;
+    text-align: center;
+}
+  
 .user-profile-image {
+
     text-align: center;
     position: relative;
     overflow: hidden;
     height: 0;
     padding-bottom: 100%;
-    background-color: var(--color-main-light);
+    /*background-color: var(--color-main-light);*/
 }
 .user-profile-image>img {
     width: 100%;
@@ -867,6 +920,30 @@ overflow: hidden;*/
   display:none;
 }
 
+
+.user-setting-content{
+  padding: 30px; 
+  margin: 0;
+  border-bottom: 1px solid var(--color-neutral-medium);
+  border-top: 1px solid var(--color-neutral-medium);
+}
+.user-edit-icon{
+
+  padding: 0 30px 10px 0;
+}
+.user-edit-icon img{
+  width: 0.6em;
+  height: 0.6em;
+}
+
+
+a.user-upload-photo {
+    padding: 1em;
+}
+.user-upload-photo img{
+  width: 2em;
+  height: 2em;
+}
 
 
 /* Filter */

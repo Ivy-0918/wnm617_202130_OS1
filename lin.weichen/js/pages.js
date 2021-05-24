@@ -86,6 +86,8 @@ const UserEditPage = async () => {
 
    $("#user-edit-form")
          .html(makeUserProfileUpdateForm(user.result[0]));
+   $("#user-edit-page .user-edit-photo")
+         .html(makeUserEditPhoto(user.result[0]));
 }
 
 const UserPasswordPage = async () => {
@@ -165,7 +167,7 @@ const AnimalAddPage = async () => {
       .html(
          makeAnimalProfileUpdateForm({
             name:"",
-            type:"",
+            
             breed:"",
             color:"",
             length:"",
@@ -173,6 +175,7 @@ const AnimalAddPage = async () => {
          },"animal-add")
       );
 }
+
 
 
 // ChoosePage

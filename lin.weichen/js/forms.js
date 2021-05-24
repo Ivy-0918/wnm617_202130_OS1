@@ -75,7 +75,6 @@ const checkUserPasswordForm = () => {
 
 const checkAnimalAddForm = () => {
    let name = $("#animal-add-name").val();
-   let type = $("#animal-add-type").val();
    let breed = $("#animal-add-breed").val();
    let color = $("#animal-add-color").val();
    let length = $("#animal-add-length").val();
@@ -83,7 +82,7 @@ const checkAnimalAddForm = () => {
 
    query({
       type:"insert_animal",
-      params:[sessionStorage.userId,name,type,breed,color,length,description]
+      params:[sessionStorage.userId,name,breed,color,length,description]
    }).then(d=>{
       if(d.error) {
          throw d.error;
@@ -97,7 +96,6 @@ const checkAnimalAddForm = () => {
 
 const checkAnimalEditForm = () => {
    let name = $("#animal-edit-name").val();
-   let type = $("#animal-edit-type").val();
    let breed = $("#animal-edit-breed").val();
    let color = $("#animal-edit-color").val();
    let length = $("#animal-edit-length").val();
@@ -105,7 +103,7 @@ const checkAnimalEditForm = () => {
 
    query({
       type:"update_animal",
-      params:[name,type,breed,color,length,description,sessionStorage.animalId]
+      params:[name,breed,color,length,description,sessionStorage.animalId]
    }).then(d=>{
       if(d.error) {
          throw d.error;
