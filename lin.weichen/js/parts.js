@@ -1,13 +1,19 @@
 
 const makeAnimalList = templater(o=>`
-<div class="animallist-item display-flex animal-jump" data-id="${o.id}">
-   <div class="flex-none animallist-image"><img src="${o.img}" alt=""></div>
-   <div class="animallist-description flex-stretch">
-      <div class="animallist-name">${o.name}</div>
-      <div class="animallist-info">${o.breed}, ${o.color}, ${o.length}</div>
+<div class="animallist-whole display-flex" style="align-items:center;">
+   <div class="animallist-item display-flex animal-jump" style="width:90%;" data-id="${o.id}">
+      <div class="flex-none animallist-image"><img src="${o.img}" alt=""></div>
+      <div class="animallist-description flex-stretch">
+         <div class="animallist-name">${o.name}</div>
+         <div class="animallist-info">${o.breed}, ${o.color}, ${o.length}</div>
+      </div> 
+
    </div>
-   
+   <div class="animal-delete" style="padding:0 1em 0 0;" data-id="${o.id}"><img src="images/icons/trash.png" alt=""></div>
 </div>
+
+
+
 `);
 
 
@@ -25,7 +31,7 @@ const makeUserEditPhoto = o => `
 <div class="user-profile-image">
    <img src="${o.img}" alt="">
 
-   <div class="floater bottom right">
+   <div class="floater right">
       <a href="#user-upload-page" class="user-upload-photo"><img src="images/icons/upload.png" alt=""></a>
    </div>
 </div>
@@ -54,7 +60,7 @@ const makeAnimalInfo = o => `
    <div class="animal-content"><p>${o.description}</p></div>
 </div>
 
-<button class=" animal-delete floater top right" data-id="${o.id}"><img src="images/icons/trash.png" alt=""></button>
+<button class=" animal-delete floater top right" style="padding:1em;" data-id="${o.id}"><img src="images/icons/trash.png" alt=""></button>
 `;
 
 
@@ -69,7 +75,7 @@ const makeAnimalPopup = o => `
       <div class="animal-breed">${o.breed}</div>
 
       <div class="animal-color">${o.color}</div>
-      <div class="animal-length">${o.breed}</div>
+      <div class="animal-length">${o.length}</div>
    </div>
 </div>
 `;
@@ -235,10 +241,19 @@ const capitalize = s => s[0].toUpperCase()+s.substr(1);
 //    return templater(o=>o?`<li class="filter" data-field="${type}" data-value="${o}">${capitalize(o)}</li>`:'')(a);
 // }
 
+
+// Filter_Color
 const filterList = (animals,color) => {
    let a = [...(new Set(animals.map(o=>o[color])))];
    return templater(o=>o?`<li class="filter" data-field="${color}" data-value="${o}">${capitalize(o)}</li>`:'')(a);
 }
+
+// Filter_Color_Icon
+// const filterList = (animals,color) => {
+//    let a = [...(new Set(animals.map(o=>o[color])))];
+//    return templater(o=>o?`<li class="filter" data-field="${color}" data-value="${o}"><img class="filter-image" src="images/icons/black.png" alt=""></li>`:'')(a);
+// }
+
 
 // optional add icon image
 // const filterList = (animals,color) => {
@@ -252,12 +267,17 @@ const filterList = (animals,color) => {
 
 const makeFilterList = (animals) => {
    return `
-   <li class="filter" data-field="color" data-value="">All</li>
+   <li class="filter" data-field="color" data-value=""><img class="filter-image" src="images/icons/all.png" alt=""></li>
    |
-   ${filterList(animals,'color')}
+   <li class="filter" data-field="color" data-value="white"><img class="filter-image" src="images/icons/white.png" alt=""></li>
+   <li class="filter" data-field="color" data-value="brown"><img class="filter-image" src="images/icons/brown.png" alt=""></li>
+   <li class="filter" data-field="color" data-value="black"><img class="filter-image" src="images/icons/black.png" alt=""></li>
+
+
 
    `
 }
+
 
 
 

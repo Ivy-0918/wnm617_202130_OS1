@@ -161,7 +161,7 @@ const checkAnimalDelete = (id) => {
       if(d.error) {
          throw d.error;
       }
-      window.history.go(-1);
+      window.history.go(0);
    })
 }
 

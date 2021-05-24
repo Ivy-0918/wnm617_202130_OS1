@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Animal Tracker</title>
 
-	<!-- <base href="/aau/wnm617/lin.weichen/"> -->
+	<base href="/aau/wnm617/lin.weichen/">
 
-   <link rel="apple-touch-icon" href="foxicon.png">
-   <link rel="icon" href="foxicon.png">
+   <link rel="apple-touch-icon" href="images/app.png">
+   <link rel="icon" href="images/app.png">
    <!-- icon image -->
 
    <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,6 +18,8 @@
    <!-- font choice -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+
 
 	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
 	<link rel="stylesheet" href="css/app.css">
@@ -87,7 +89,7 @@
             <form class="form" id="signup-form" data-ajax="false" style="padding:1em">
                <div class="form-control">
                   <label for="signup-email" class="form-label">Email</label>
-                  <input class="form-input" type="email" id="signup-email" data-role="none">
+                  <input class="form-input"  type="email" id="signup-email" data-role="none">
                </div>
                <div class="form-control">
                   <label for="signup-password" class="form-label">Password</label>
@@ -135,15 +137,15 @@
    <section data-role="page" id="recent-page">
       <div data-role="main">
          <div class="map"></div>
-         <div class="floater bottom right" style="padding:1em;">
+         <div class="floater bottom right left" style="bottom: 30px;">
             <a href="#choose-animal-page" class="circle-button js-add-from-recent">&plus;</a>
             <!-- js-add-from-recent:app.js -->
          </div>
-         <div class="floater top left" style="width:100%;padding:1em">
+         <!-- <div class="floater top left" style="width:100%;padding:1em">
             <form data-ajax="false" id="recent-search" class="hotdog hovering">
                <input type="search" id="recent-search-value" data-role="none" placeholder="Search">
             </form>
-         </div>
+         </div> -->
 
          <div class="modal" id="recent-drawer">
             <div class="modal-drawer modal-card top">
@@ -170,11 +172,11 @@
 
 <!-- List Page -->
    <section data-role="page" id="list-page" style="background-color: #fff">
-      <header data-role="header" class="text-align:center;" style="background-color:#6a4219ff">
+      <header data-role="header" class="text-align:center;" style="background-color:#fdc838ff; color: var(--color-main-medium" color: var(--color-main-medium">
          <h1>Bear List</h1>
          <ul>
             <li class="flex-stretch"></li>
-            <li><a href="#animal-add-page">&plus;</a></li>
+            <li><a href="#animal-add-page" style="font-size: 1em;">&plus;</a></li>
          </ul>
       </header>
 
@@ -183,7 +185,7 @@
          <div class="overscroll">
          
             <div class="search-control">
-               <form data-ajax="false" id="list-search" class="hotdog">
+               <form data-ajax="false" id="list-search" class="hotdog" style="border: 1.8px solid var(--color-main-medium);">
                   <i class="icon"><img src="images/icons/search.png" alt=""></i>
                   <input type="search" id="list-search-value" data-role="none" placeholder="Search">
                </form>
@@ -201,21 +203,6 @@
       <footer data-role="footer" data-template="#footer-template" ></footer>
    </section>
          
-<!-- Original Search-form  -->
-<!-- <div class="search-control">
-   <form class="search-form">
-         <input class="search-input" type="search" name="s" placeholder="Search for places" data-role="none">
-         <button type="submit">Submit</button>
-   </form>
-</div> -->
-
-<!-- <div class="sort">
-   <select>
-      <option value="1">Newest</option>
-      <option value="2">Oldest</option>
-   </select>
-</div> -->
-
 
 
 
@@ -238,7 +225,7 @@
    <!-- USER DATA SECTION -->
 
    <section data-role="page" id="user-profile-page">
-      <header data-role="header">
+      <header data-role="header" style="background-color:#fdc838ff; color: var(--color-main-medium">
          <h1>User Profile</h1>
       </header>
       <div data-role="main" class="display-flex flex-vertical">
@@ -307,7 +294,7 @@
 
 <!-- User Edit Page -->
    <section data-role="page" id="user-edit-page">
-      <header data-role="header">
+      <header data-role="header" style="background-color:#fdc838ff; color: var(--color-main-medium">
          <h1>Edit Your Info</h1>
          <ul>
             <li><a href="#" data-rel="back">Cancel</a></li>
@@ -336,7 +323,7 @@
 
 <!-- User Password Page -->
    <section data-role="page" id="user-password-page">
-      <header data-role="header">
+      <header data-role="header" style="background-color:#fdc838ff; color: var(--color-main-medium">
          <h1>Edit Your Password</h1>
          <ul>
             <li><a href="#" data-rel="back">Cancel</a></li>
@@ -352,7 +339,7 @@
    </section>
 
    <section data-role="page" id="user-upload-page">
-      <header data-role="header">
+      <header data-role="header" style="background-color:#fdc838ff; color: var(--color-main-medium)">
          <h1>Upload Photo</h1>
          <ul>
             <li><a href="#" data-rel="back">Cancel</a></li>
@@ -370,7 +357,7 @@
                </label>
 
                <label for="user-upload-input" class="floater bottom right">
-                  <img src="images/icons/upload.png" class="icon" style="width: 4.5em;height: 4.5em;margin-bottom: 7em;">
+                  <img src="images/icons/upload.png" class="icon" style="width: 3em;height: 3em;margin-bottom: 7em;">
                </label>
             </form>
          </div>
@@ -387,7 +374,7 @@
    <section data-role="page" id="animal-profile-page">
       <div data-role="main" class="display-flex flex-vertical">
          <div class="animal-top">
-            <div class="floater top left header no-touch" >
+            <div class="floater top left header no-touch" style="background-image: linear-gradient( 182deg, #ffff, #00000000);background-color: transparent;box-shadow: none;">
             <!-- style="background-image: linear-gradient(180deg, #ffffff96, #ffffff00);" -->
                <ul>
                   <li class="flex-none do-touch"><a href="#" data-rel="back"><img src="images/icons/back.png" style="width: 10px;padding-top: 17px;"></a></li>
@@ -422,7 +409,7 @@
          <div class="animal-bottom">
             <div class="animal-bottom-section animal-map">
                <div class="map"></div>
-               <div class="floater bottom right" style="padding:1em">
+               <div class="floater bottom right left" style="padding:1em">
                   <a href="#choose-location-page" class="circle-button js-choose-animal">&plus;</a>
                </div>
             </div>
@@ -434,7 +421,7 @@
 <!-- Edit Animal Page -->
 
    <section data-role="page" id="animal-edit-page">
-      <header data-role="header">
+      <header data-role="header" style="background-color:#fdc838ff; color: var(--color-main-medium">
          <h1>Edit Animal</h1>
          <ul>
             <li><a href="#" data-rel="back">Cancel</a></li>
@@ -453,7 +440,7 @@
 
 <!-- Animal ADD Page -->
    <section data-role="page" id="animal-add-page">
-      <header data-role="header">
+      <header data-role="header" style="background-color:#fdc838ff; color: var(--color-main-medium">
          <h1>Add Animal</h1>
          <ul>
             <li><a href="#" data-rel="back">Cancel</a></li>
@@ -477,7 +464,7 @@
 
 <!-- CHOOSE LOCATION PAGES -->
    <section data-role="page" id="choose-animal-page">
-      <header data-role="header">
+      <header data-role="header" style="background-color:#fdc838ff; color: var(--color-main-medium">
          <h1>Choose Animal</h1>
          <ul>
             <li><a href="#" data-rel="back">Cancel</a></li>
@@ -490,7 +477,7 @@
          <div class="overscroll">
             <form style="padding:1em">
                <div>
-                  <a href="#animal-add-page" class="form-button">Create New Animal</a>
+                  <a href="#animal-add-page" class="form-button" style="width: 90%;">Create New Animal</a>
                </div>
                <p style="text-align:center">Or Choose One Below</p>
                <div class="animal-choices">
@@ -506,7 +493,7 @@
    </section>
 
    <section data-role="page" id="choose-location-page">
-      <header data-role="header">
+      <header data-role="header" style="background-color:#fdc838ff; color: var(--color-main-medium">
          <h1>Choose Location</h1>
          <ul>
             <li><a href="#" data-rel="back">Back</a></li>
@@ -525,7 +512,7 @@
 
 <!-- LOCATION DESCRIPTION PAGE -->
    <section data-role="page" id="location-description-page">
-      <header data-role="header">
+      <header data-role="header" style="background-color:#fdc838ff; color: var(--color-main-medium">
          <h1>Describe Animal</h1>
          <ul>
             <li><a href="#" data-rel="back">Back</a></li>
@@ -554,9 +541,9 @@
          <li data-page-link="recent-page"  class="nav-mobile-hump"><a href="#recent-page"><img src="images/icons/map.png"></a></li>
 
 
-         <li data-page-link="user-profile-page" class="nav-mobile-hump" style="align-self: center;"><a href="#user-profile-page"><img src="images/icons/user.png"></a></li>
-
          <li data-page-link="list-page" class="nav-mobile-hump" style="align-self: center;"><a href="#list-page"><img src="images/icons/list.png"></a></li>
+
+         <li data-page-link="user-profile-page" class="nav-mobile-hump" style="align-self: center;"><a href="#user-profile-page"><img src="images/icons/user.png"></a></li>
    </ul>
 
    </script>
