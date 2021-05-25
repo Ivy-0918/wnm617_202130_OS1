@@ -1,18 +1,3 @@
-// const makeMap = async (target,center={lat: 37.786159,lng: -122.399206}) => {
-//    await checkData(()=>window.google);
-//    	let map = new google.maps.Map(
-//       $(target)[0],
-//       {
-//          center: center,
-//          zoom: 12,
-//          disableDefaultUI: true
-//       }
-//     );
-//    	new google.maps.Marker({
-//         position: center,
-//         map: map,
-//     });
-// }
 
 
 //map_el: html makeMap
